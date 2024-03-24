@@ -1,0 +1,7 @@
+maon{
+   display: flex;
+}
+
+section{
+   flex: 0 0 50% ;
+}
