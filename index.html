@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/form.css">
-    <link rel="stylesheet" href=".//assets/css/blog.css">                                                                        
+
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/form.css">
+<link rel="stylesheet" href=".//assets/css/blog.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="myBlog">My Blog</title>
 </head>
+
 <body id="body">
     <header>
-        <h3 id="idMode">Light and Dark Mode</h3>
-        <button id="switch">Switch mode</button>
-    <section class="mind">What's on your Mind?</section>
+        <div id="toggle">
+            <img src="./assets/css/images/sun and moon.jpg" alt="sun and the mood light switch">
+        </div>
+
+        <section class="mind">What's on your Mind?</section>
     </header>
     <main class="main">
-        <section><img  id="image" src="https://www.adobe.com/express/learn/blog/media_11c2b6daf71a8253271e446c0a48787db9155c62c.png?width=2000&format=webply&optimize=medium"></section>
+        <section><img id="image"
+                src="https://www.adobe.com/express/learn/blog/media_11c2b6daf71a8253271e446c0a48787db9155c62c.png?width=2000&format=webply&optimize=medium">
 
         <section>
-            <form>
-             <label id="username">Username</label><br>
-             <input type="text"><br><br>
-             <label id="title">Title</label><br>
-             <input type="text"><br><br>
-             <label>Content</label><br>
-             <input type="text"><br><br>
-             <button id="submit">Submit</button>
+            <form id ="form">
+                <label id="username">Username</label><br>
+                <input type="text"><br><br>
+                <label id="title">Title</label><br>
+                <input type="text"><br><br>
+                <label id="content">Content</label><br>
+                <input type="text"><br><br>
+                <button id="submit">Submit</button>
             </form>
         </section>
 
     </main>
+    <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/logic.js"></script>
+   <script src="./assets/js/form.js"></script>
 
-    <script>"./assets/js/blog.js"</script>
-    <script>"./assets/js/form.js"</script>
-    <script>"./assets/js/logic.js"</script>
 </body>
 
 </html>

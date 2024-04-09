@@ -1,39 +1,28 @@
-#body{
-   background-color: blanchedalmond;
-   font-size: larger;
-   font-family: Verdana, Tahoma, sans-serif;
+body {
+    background-color: blanchedalmond;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: black;
+    font-size: 25px;
+    padding: 25px;
 }
 
-#switch{
-   margin-left: 90%;
+.main {
+   display: flex;
+   
 }
 
-#idMode{
-  margin-left: 90%;
+.mind {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 80px;
 }
 
-.main{
+#image {
    display: inline-flex;
-   background-color: blanchedalmond;
-
+    max-width: 60%;
+    max-height: 75%;
+    margin-right: 20px;
 }
-.mind{
-text-align: center;
-
-}
-
-
-#image{
-   max-width: 100%;
-   max-height: 100%
-}
-
-.darkmode, .lightmode {
-  float: right;
-}
-
-
-
-section{
-   flex: 0 0 50% ;
+#form {
+   margin-right: 20px;
 }

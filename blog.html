@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href=".//assets/css/blog.css">   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog List</title>
-</head>
-
-<body id="body">
-    <header>
-        <h3 id="idMode">Light and Dark Mode</h3>
-        <button id="switch">Switch mode</button>
-
-    <section id="blogList"></section><br>
-    <a href="./index.html"><button id="back">Back</button></a>
-</header>
-    <main>
-        <section class="main">My First Blog</section><br><br>
-        <section>
-            <form>
-                <label id="title">Title</label><br>
-                <input type="text"><br><br>
-                <label id="content">Content</label><br>
-                <input type="text2"><br><br>
-            </form>
-        </section>
-    </main>
-    <script>"./assets/js/blog.js"</script>
-    <footer>
-        <ul>
-            <li><a href="https://yvonneewa.github.io/my-profolio/" target="_blank">My-Profolio</a></li>
-            <li> Blog</li>
-            <li><a href="mailto: yowantings@gmail.com"> Email</a></li>
-        </ul>
-    </footer>
+    <link rel="stylesheet" href="./assets/css/blog.css">
+<body>
+    <div class="content">
+        <header>
+            <div id="toggle">
+                <img src="./assets/css/images/sun and moon.jpg" alt="">
+            </div>
+            <a href="./index.html"><button id="back">Back</button></a>
+        </header>
+        
+        <main>
+            <section class="main">My First Blog</section><br><br>
+            <section ID="blogArea">
+                <form>
+                    <label for="title">Title</label><br>
+                    <input type="text" name="title"><br><br>
+                    <label for="content">Content</label><br>
+                    <input type="text" name="content"><br><br>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <ul>
+                <li><a href="https://yvonneewa.github.io/my-profolio/" target="_blank">My Portfolio</a></li>
+                <li>Blog</li>
+                <li><a href="mailto:yowantings@gmail.com">Email</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/blog.js"></script>
 </body>
-
 </html>

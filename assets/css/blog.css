@@ -1,21 +1,28 @@
-#body{
-    background-color: blanchedalmond;
-    font-size: larger;
+body {
+    background-color:
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-
-#switch{
+#back {
     margin-left: 90%;
- }
- 
- #idMode{
-   margin-left: 90%;
- }
-#back{
-    margin-left: 90%;
-} 
+}
 
-.main{
+.main {
     text-align: center;
+}
+
+.darkMode {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.lightMode {
+    background-color:  blanchedalmond;
+    color: black;
+}
+
+#toggle img {
+    width: 25px;
+    float: right;
+    cursor: pointer;
 }
