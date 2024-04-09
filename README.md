@@ -30,8 +30,6 @@ WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
 
-![alt text](<Screenshot 2024-03-28 171754-1.png>)
-
 
 referances
 https://www.w3schools.com/tags/tag_form.asp
