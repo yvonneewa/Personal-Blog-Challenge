@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById("form"); // Target the entire form
+  const form = document.getElementById("form"); 
 
   form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const title = document.getElementById('title').value;
       const content = document.getElementById('content').value;
 
-      // Your form validation logic here (optional)
+     
 
       if (username && title && content) {
           const postData = {
@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
               content
           };
 
-          // Save post using localStorage (assuming logic from blog.js)
+         
           savePost(postData);
 
-          // Call renderPosts function to update the blog list dynamically
           renderPosts();
 
-          form.reset(); // Reset the form after successful submission
+          form.reset(); 
       }
   });
 });
