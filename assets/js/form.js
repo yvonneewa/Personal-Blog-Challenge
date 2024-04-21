@@ -21,10 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
          
           savePost(postData);
+          window.location.href = "blog.html";
+        //   renderPosts();
 
-          renderPosts();
-
-          form.reset(); 
+        //   form.reset(); 
       }
   });
 });
+function savePost(postData) {
+    const posts = JSON.parse(localStorage.getItem('posts')) || [];
+    posts.push(postData);
+    localStorage.setItem('posts', JSON.stringify(posts));
+}

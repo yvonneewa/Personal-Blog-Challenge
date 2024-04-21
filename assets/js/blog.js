@@ -16,29 +16,43 @@
 // local storage
 
 document.addEventListener('DOMContentLoaded', function() {
-renderPosts();
-   function renderPosts() {
-   const postsList = document.getElementById('blogArea');
+    renderPosts();
 
+    function renderPosts() {
+        const postsList = document.getElementById('blogArea');
 
-   if (!postsList) {
-    
-    return;
-}
+        if (!postsList) {
+            return;
+        }
 
-console.log(postsList);
-      postsList.innerHTML = ''; // Clear existing content
-      const posts = JSON.parse(localStorage.getItem('posts')) || [];
-      posts.forEach(post => {
-          const postElement = document.createElement('div');
-          postElement.innerHTML = `
-              <h2>${post.title}</h2>
-              <p>${post.content}</p>
-              <p>By ${post.username}</p>
-          `;
-          postsList.appendChild(postElement);
-      });
-  }
+        postsList.innerHTML = '';
+        const posts = JSON.parse(localStorage.getItem('posts')) || [];
+        
+        posts.forEach((post, index) => {
+            const postElement = document.createElement('div');
+            postElement.innerHTML = `
+                <h2>${post.title}</h2>
+                <p>${post.content}</p>
+                <p>By ${post.username}</p>
+                <button class="delete-btn" data-index="${index}">Delete</button>
+            `;
+            postsList.appendChild(postElement);
+        });
+
+        // Add event listeners to delete buttons
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-index')); // Parse index as integer
+                deletePost(index);
+            });
+        });
+    }
+
+    function deletePost(index) {
+        const posts = JSON.parse(localStorage.getItem('posts')) || [];
+        posts.splice(index, 1);
+        localStorage.setItem('posts', JSON.stringify(posts));
+        renderPosts(); // Re-render posts after deletion
+    }
 });
-
-
