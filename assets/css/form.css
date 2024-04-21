@@ -3,10 +3,4 @@
     border: ;
  }
 
- /* Style for blog posts */
-.blog-post {
-    border: 1px solid #ccc; /* Add a border around the blog post */
-    border-radius: 10px; /* Set the border radius to create rounded corners */
-    padding: 10px; /* Add some padding to the blog post */
-    margin-bottom: 20px; /* Add some margin between each blog post */
-}
+ 
